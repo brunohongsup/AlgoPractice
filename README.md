@@ -1,0 +1,2 @@
+# AlgoPractice
+self taught algo
