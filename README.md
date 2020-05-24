@@ -1,32 +1,5 @@
 # AlgoPractice
 self taught algo
-using namespace std;
-static Node* AllocNode();
-static void Print(Node* n);
-Node* NIL = new Node;
-Node* tree_search(Node* t, int x)
-{
-	
-	if (x == t->key || t == NIL)
-		return t;
-
-	else if (x > t->key)
-		return tree_search(t->right, x);
-
-	else
-		return tree_search(t->left, x);
-
-}
-static Node* AllocNode()
-{
-	return new Node;
-}
-void Terminate(Node* x)
-{
-	if (x->left != NIL) Terminate(x->left);
-	if (x->right != NIL) Terminate(x->right);
-	delete x;
-}
 Node* rbtreeInsert(Node** root,Node* n,int x,Node* parent)
 {
 	if (n == NIL) {
