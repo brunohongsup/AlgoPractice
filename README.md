@@ -1,5 +1,7 @@
 # AlgoPractice
 self taught algo
+
+
 Node* rbtreeInsert(Node** root,Node* n,int x,Node* parent)
 {
 	if (n == NIL) {
